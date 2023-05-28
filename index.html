@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Rubik:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>PG4</title>
+  </head>
+  <body>
+    <header>
+      <h1>Periféricos</h1>
+      <div class="search">
+      
+		<form action="Buscar.js">
+            <input type="text" name="buscador" placeholder="Buscar Producto...  ">
+            <input type="submit" name="boton_buscar" value="Buscar">
+        </form>
+        <div class="carrito">
+        <ul>
+            <li><a href="" title="Ver Mi Carrito"><i class="fa-solid fa-cart-shopping"></i> &nbsp; Mi Carrito</a></li>
+        </ul>
+        </div>
+        <div class="usuario">
+          <ul>
+           <li><a href="" title="Ingresar"><i class="fa-regular fa-user"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="html/productos.html">Productos</a></li>
+        <li><a href="html/pc_gamers.html">PC Gamers</a></li>
+        <li><a href="#">PC Oficinas</a></li>
+        <li><a href="#">Notebooks y Tablets</a></li>
+        <li id="iconos" class="icono_face" title="Facebook"><i class="fa-brands fa-facebook"></i></li>
+        <li id="iconos" class="icono_insta" title="Instagram"><i class="fa-brands fa-instagram"></i></li>
+        <li id="iconos" class="icono_git" title="GitHub"><i class="fa-brands fa-github"></i></li>
+      </ul>
+    
+    </nav>
+    <div class="slider-container">
+      <img src="img/monitor gigabyte.jpg" alt="Imagen 1">
+      <img src="img/mouse 305.webp" alt="Imagen 2">
+      <img src="img/PC armada gamer Ryzen 7.webp" alt="Imagen 3">
+      <img src="img/pc oficina armada.jpg" alt="imagen 4">
+      <img src="img/teclado philips.jpg" alt="imagen 5">
+      <img src="img/pc oficina.jpg" alt="imagen 6">
+    </div>
+    <script src="scss.js"></script>
+    <div class="mov_footer">
+      <div class="footer">
+       <img src="img_marcas/adata.jpg" alt="img1">
+       <img src="img_marcas/amd.jpg" alt="img2">
+       <img src="img_marcas/asrock.jpg" alt="img3">
+       <img src="img_marcas/asus.jpg" alt="img4">
+       <img src="img_marcas/hyperx.jpg" alt="img5">
+       <img src="img_marcas/nvidia.png" alt="img6">
+       <img src="img_marcas/intel.jpg" alt="img7">
+       <img src="img_marcas/razer.jpg" alt="img8">
+       
+      </div>
+      <script src="footer.js"></script>
+      <script>
+        $(document).ready(function() {
+          var sliderImages = $('.slider-images');
+          var sliderWidth = $('.slider-container').width();
+          var currentSlide = 0;
+          var slideInterval = setInterval(nextSlide, 3000);
+      
+          function nextSlide() {
+            if (currentSlide === 5) {
+              currentSlide = 0;
+            } else {
+              currentSlide++;
+            }
+            sliderImages.css('transform', 'translateX(' + (-currentSlide * sliderWidth) + 'px)');
+          }
+        });
+      </script>
+    </div>
+    <footer>Proyecto Grupo 4</footer>
+  </body>
+</html>

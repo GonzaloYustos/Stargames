@@ -1,0 +1,348 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    }
+    
+    body {
+    
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      width: 100%;
+      overflow-x: hidden
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      padding:20px;;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    
+    .search {
+      display: flex;
+      margin: 5px;
+      padding: 5px;
+      margin-right: 20px;
+      
+    }
+    
+    .buscar {
+      padding: 5px;
+      border-radius: 8px;
+      border: 2px solid #000000;
+      
+    }
+    
+    input[type="text"] {
+      padding: 5px;
+      border-radius: 8px;
+      border: 2px solid #000000;
+      margin-right: 10px;
+    }
+    
+    input[type="submit"] {
+      padding: 5px;
+      border-radius: 8px;
+      border: 2px solid #000000;
+      margin-right: 10px;
+    }
+    
+    input[type="submit"]:hover{
+      background: #333;
+      color: aliceblue;
+      border:2px solid #fff;
+      padding: 5px;
+    }
+    
+    .carrito{
+    background: #333;
+    padding: 5px;
+    }
+    
+    .carrito li{
+      list-style: none;
+    }
+    
+    .carrito a{
+      text-decoration: none;
+      color: #d6d6d6;
+    }
+    
+    .carrito li :hover{
+    color: #ffffff;
+    
+    
+    
+    border-radius: 50px;
+    }
+    
+    .usuario{
+    padding: 5px;
+    }
+    
+    .usuario li{
+    list-style: none;
+    
+    }
+    
+    .usuario a {
+    text-decoration: none;
+    color: #d6d6d6;
+    padding: 4px;
+    margin: 5px;
+    
+    }
+    
+    .usuario li :hover{
+    
+    background: #d6d6d6;
+    color: #4a4a4a;
+    border-radius: 50%;
+    
+    }
+    
+    nav {
+      background-color: #333; 
+      
+    }
+    
+    nav ul {
+      list-style: none; 
+      margin: 0;
+      padding: 0;
+      display: flex; 
+      border: 1px solid white;
+      
+    }
+    
+    nav li {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+     
+    }
+    
+    nav a {
+      display: block;
+      padding: 1rem; 
+      color: #fff;
+      text-decoration: none; 
+    }
+    
+    nav ul li:hover {
+      background-color: #666;
+    }
+    
+    nav ul li:hover a {
+      color: #fff; 
+    }
+    
+    section {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .product {
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      text-align:center
+    }
+    
+    #iconos{
+      list-style: none; 
+      margin: 8px;
+      padding: 8px;
+      float: right;
+      font-size: 20px;
+      color: #fff;
+      position: relative;
+      width: 10%;
+      text-align: center;
+    }
+    
+    .icono_face :hover{
+    background: #fff;
+    color: rgb(86, 127, 194);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    }
+    
+    .icono_insta :hover{
+    background: -webkit-linear-gradient(rgb(255, 225, 0),red);
+    border: 1px solid rgb(52, 74, 156);
+    border-radius: 50%;
+    }
+    
+    .icono_git :hover{
+    background-color: #fff;
+    color: #333;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    }
+    
+    .barra_prod{
+    float: left;
+    background-color: #4a4a4a;
+    padding: 15px;
+    margin-left: 1px;
+    }
+    
+    #dropdown{
+    clear: both;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    
+    }
+    
+    #dropdown :hover{
+    color: #fff;
+    text-decoration: underline dotted #ffffff;
+    }
+    
+    #dropdown a{
+      text-decoration: none;
+      list-style: none;
+      color: #b5b5b5;
+      
+    }
+    
+    #dropdown:hover ul {
+      display: block;
+      
+    }
+    
+    #dropdown ul {
+      background-color: #6a6a6a;
+      display: none;
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      position: absolute;
+      z-index: 1;
+    }
+    
+    #dropdown ul li {
+      display: block;
+      padding: 0.25em;
+      border: 1px solid #fff;
+    }
+    
+    .slider-container {
+      position: relative;
+      margin: 50px auto;
+      padding: 50px auto;
+      width: 400px;
+      height: 200px;
+      text-align: center;
+    }
+    
+    .slider-container img {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+      border-radius: 8%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    h2{
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+    
+    }
+    
+    #footer{
+      position: relative;
+      height: 45.9vh;
+      
+    }
+    
+    footer{
+      color: #fff;
+      padding: 12px;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background:#333;
+      text-align: center;
+      height: 20px;
+    }
+    
+    
+    main{
+      position: relative;
+      margin: 50px auto;
+      padding: 50px auto;
+      width: 400px;
+      height: 200px;
+      text-align: center;
+      object-fit: cover;
+      
+    }
+    
+    main h1{
+    background: #333;
+    color: #cacaca;
+    width: 100%;
+    }
+    
+    main article{
+    padding: 10px;
+    margin: 20px auto;
+    }
+    
+    main article p{
+      padding: 10px;
+      margin: 20px auto;
+      }
+    
+    main img{
+      height: auto;
+      width: 100%;
+      border-radius: 8%;
+      position: relative;
+    }
+    
+    main button{
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      border: 1px solid ;
+      border-radius: 5px;
+    }
+    
+    main button:hover{
+    background: #333;
+    color: #ccc;
+    }
+    
+    footer{
+      background-color: #333; 
+      color: #fff;
+      left: 0; 
+      bottom: 0; 
+      text-align: center; 
+      padding: 12px;
+    }
+    
+    #separador{
+      border-top: 1px solid black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
